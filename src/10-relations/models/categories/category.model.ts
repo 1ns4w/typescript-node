@@ -1,4 +1,4 @@
-import { BaseInterface } from "../base.models"
+import { BaseInterface } from "../base.model"
 
 export interface CategoryInterface extends BaseInterface {
   id: number,

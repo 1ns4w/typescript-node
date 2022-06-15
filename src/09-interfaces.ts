@@ -10,7 +10,7 @@ type Soda = {
   description?: string,
   price: number,
   stock: number,
-  size: Sizes // this is what we mean by mixing aliases with more aliases, it's confusing
+  size: Sizes // this is what we mean by mixing aliases with more aliases, it's confusing af
 }
 
 interface SodaInterface {

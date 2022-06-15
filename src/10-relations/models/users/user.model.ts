@@ -1,4 +1,4 @@
-import { BaseInterface } from "../base.models";
+import { BaseInterface } from "../base.model";
 
 // literal types could also be used here but enums are more explicit
 export enum RolesEnum {
