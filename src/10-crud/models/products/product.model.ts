@@ -13,3 +13,5 @@ export interface ProductInterface extends BaseInterface {
   category: CategoryInterface
   tags: string[]
 }
+
+
