@@ -10,7 +10,7 @@ export interface ProductInterface extends BaseInterface {
   description?: string,
   price: PriceAlias,
   stock: number,
-  category: CategoryInterface
+  category: CategoryInterface,
   tags: string[]
 }
 
