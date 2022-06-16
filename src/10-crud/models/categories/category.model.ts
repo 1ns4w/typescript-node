@@ -1,6 +1,6 @@
-import { BaseInterface } from "../base.model"
+import { BaseInterface, IdAlias } from "../base.model"
 
 export interface CategoryInterface extends BaseInterface {
-  id: number,
+  id: IdAlias,
   name: string
 }
