@@ -6,7 +6,7 @@ export let products: ProductDTO[] = []
 
 // product creations is delegated to service, that's what we use dtos for
 export const addProduct = (product: ProductDTO): void => {
-  products.push({
+  const newProduct = {
     id: faker.datatype.uuid(),
     createdAt: faker.date.recent(),
     category: {
@@ -14,7 +14,8 @@ export const addProduct = (product: ProductDTO): void => {
       name: faker.commerce.department()
     },
     ...product,
-  })
+  }
+  products.push(newProduct)
 }
 
 /*
