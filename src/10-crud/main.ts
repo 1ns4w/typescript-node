@@ -17,6 +17,13 @@ for (let i = 0; i < 10; i++) {
 
 console.log(products)
 
+const [product] = products
+updateProduct(product.id, {
+  stock: 20
+})
+
+console.log(products)
+
 /*
 let order: OrderInterface = {
   id: 1,

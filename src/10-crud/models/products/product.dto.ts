@@ -4,3 +4,19 @@ export interface ProductDTO extends Omit<ProductInterface, 'id' | 'createdAt' | 
   categoryId: string;
 }
 
+export interface UpdateProductDTO extends Partial<ProductDTO> {}
+
+// if we didn't have partial, we would have to create a new interface with all the fields set as optional
+// note: if we wanted all the fields we could just use ProductDTO as updateProduct func product data type
+/*
+export interface updateProductDTO {
+  name?: string,
+  image?: string,
+  description?: string,
+  price?: PriceAlias,
+  stock?: number,
+  category?: CategoryInterface,
+  tags?: string[]
+}
+*/
+
