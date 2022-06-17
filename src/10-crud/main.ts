@@ -1,4 +1,4 @@
-import { products, addProduct } from "./models/products/product.service";
+import { products, addProduct, updateProduct } from "./models/products/product.service";
 import { OrderInterface } from "./models/orders/order.model";
 import { RolesEnum } from "./models/users/user.model";
 import { faker } from '@faker-js/faker';
@@ -15,14 +15,14 @@ for (let i = 0; i < 10; i++) {
   })
 }
 
-console.log(products)
-
 const [product] = products
+console.log(product)
+
 updateProduct(product.id, {
   stock: 20
 })
 
-console.log(products)
+console.log(products[0])
 
 /*
 let order: OrderInterface = {
